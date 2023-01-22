@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 
-type Props = {}
+interface Props {
+  close: () => void;
+}
 // TODO
-function Overlay({close}: Props) {
+function Overlay({ close }: Props) {
   return (
     <div
       className="fixed z-50 inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
@@ -12,7 +14,7 @@ function Overlay({close}: Props) {
         className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white"
       >
         <div className="mt-3 text-center">
-          
+
           <h3 className="text-lg leading-6 font-medium text-gray-900">WeChat</h3>
           <img
             src='/images/QR.png'
