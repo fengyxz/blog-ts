@@ -20,7 +20,7 @@ function Overlay({close}: Props) {
           </img>
           <div className="mt-2 px-7 py-3">
             <p className="text-sm text-gray-500">
-              Wechat ID: Anktii
+              WeChat ID: Anktii
             </p>
           </div>
           <div className="items-center px-4 py-3">
