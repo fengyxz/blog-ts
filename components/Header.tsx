@@ -1,10 +1,20 @@
-import React from 'react'
+import React,{useState }from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+import Overlay from './Overlay';
 
 type Props = {}
 
 export default function Header({}: Props) {
+
+  const [visible,setVisible] = useState(false);
+  const open = () => {
+    setVisible(true);
+  }
+  const close = () => {
+    setVisible(false);
+  }
+
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
       <motion.div 
@@ -29,7 +39,9 @@ export default function Header({}: Props) {
       <SocialIcon network="wechat"
         className='cursor-pointer'
         fgColor="gray"
-        bgColor="transparent"      
+        bgColor="transparent"  
+        id='wechat'    
+        onClick={open}
         />
       <SocialIcon url="mailto:lvdanyu37@gmail.com"  
         fgColor="gray"
@@ -64,6 +76,7 @@ export default function Header({}: Props) {
           Get In Touch
         </p>
       </motion.div>
+      {visible && <Overlay close={close} />}
     </header>
   )
 }
