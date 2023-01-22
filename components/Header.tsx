@@ -76,6 +76,7 @@ export default function Header({}: Props) {
           Get In Touch
         </p>
       </motion.div>
+       {/* TODO: Type '{ close: () => void; }' is not assignable to type 'IntrinsicAttributes'. */}
       {visible && <Overlay close={close} />}
     </header>
   )
