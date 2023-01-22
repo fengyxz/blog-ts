@@ -22,7 +22,6 @@ function BackgroundCircles({}: Props) {
       <div className='absolute border border-[#333333] h-[300px] w-[300px] mt-52 rounded-full'/>
       <div className='absolute border border-[#333333] h-[500px] w-[500px] mt-52 rounded-full'/>
       <div className='absolute border border-pink-200 opacity-20 h-[650px] w-[650px] mt-52 rounded-full animate-pulse'/>
-      <div className='rounded-full border border-[#333333] h-[800px] w-[800px] absolute mt-52'/>
     </motion.div>
   )
 }

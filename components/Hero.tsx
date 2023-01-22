@@ -20,7 +20,7 @@ export default function Hero({}: Props) {
     text-center overflow-hidden'>
       <BackgroundCircles/>
       <img
-        className='relative rounded-full h-36 w-36 mx-auto object-cover'
+        className='relative rounded-full h-32 w-32 mx-auto object-cover'
         src="/images/fyxz.jpg"
         alt='my photo'
       />

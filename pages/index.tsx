@@ -15,7 +15,7 @@ export default function Home() {
 
       <Header/>
       {/* <Overlay/> */}
-      <section id="hero" className='snap-center'>
+      <section id="hero" className='snap-center pt-20'>
       <Hero/>
       </section>
       {/* Hero */}
