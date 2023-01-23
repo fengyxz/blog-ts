@@ -14,8 +14,10 @@ export default function Home() {
       <Head>
         <title>Antik&apos;s Portfolio</title>
       </Head>
-
-      <Header/>
+      <div className='z-30 sticky top-0 p-5'>
+        <Header/>
+      </div>
+      
 
       <section id="hero" className='snap-center pt-20'>
       <Hero/>
