@@ -1,9 +1,11 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
+import Image from 'next/image';
 
-type Props = {}
-// TODO
-function Overlay({close}: Props) {
+interface Props {
+  close: () => void;
+}
+
+function Overlay({ close }: Props) {
   return (
     <div
       className="fixed z-50 inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
@@ -23,10 +25,10 @@ function Overlay({close}: Props) {
               WeChat ID: Anktii
             </p>
           </div>
-          <div className="items-center px-4 py-3">
+          <div className='items-center px-4 py-3'>
             <button
-              id="ok-btn"
-              className="px-4 py-2 bg-pink-300 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-300"
+              id='ok-btn'
+              className='px-4 py-2 bg-pink-300 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-300'
               onClick={close}
             >
               Get it!
@@ -35,7 +37,7 @@ function Overlay({close}: Props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Overlay
+export default Overlay;

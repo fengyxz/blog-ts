@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Cursor,useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image';
@@ -21,11 +22,11 @@ export default function Hero({}: Props) {
     text-center overflow-hidden'>
       <BackgroundCircles/>
       <Image
-        className='relative rounded-full h-36 w-36 mx-auto object-cover'
+        className='relative rounded-full h-32 w-32 mx-auto object-cover'
         src="/images/fyxz.jpg"
+        alt='my photo'
         width={400}
         height={400}
-        alt='my photo'
       />
       <div className="z-20">
         <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
