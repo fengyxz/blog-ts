@@ -14,7 +14,7 @@ export default function Experience({}: Props) {
       <h3 className='z-20 absolute top-20 left-auto uppercase tracking-[6px] text-pink-100  text-xl sm:text-2xl tracking-[20px] '>
         Experience
       </h3>
-      <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
+      <div className='absolute top-5 w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'>
         {/* card */}
         <ExperienceCard/>
         <ExperienceCard/>
