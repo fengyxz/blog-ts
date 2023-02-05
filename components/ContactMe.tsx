@@ -39,10 +39,7 @@ function ContactMe({}: Props) {
           <EnvelopeIcon className='text-pink-200/50 h-7 w-7 animate-pulse'/>
           <p className='text-xl'>lvdanyu39@gmail.com</p>
         </div>
-        <div className='flex items-center space-x-5 justify-center'>
-          <MapPinIcon className='text-pink-200/50 h-7 w-7 animate-pulse'/>
-          <p className='text-xl'>ZhejiangUniversity, Hangzhou</p>
-        </div>
+    
       </div>
    
 

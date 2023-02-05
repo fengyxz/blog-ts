@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "antik-blog-ts/schemas/experience.js", "antik-blog-ts/schemas/index.js", "antik-blog-ts/schemas/pageInfo.js", "antik-blog-ts/schemas/project.js", "antik-blog-ts/schemas/skill.js", "antik-blog-ts/schemas/social.js", "pages/blog.js"],
   "exclude": ["node_modules"]
 }
