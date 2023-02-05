@@ -39,8 +39,6 @@ export default function ExperienceCard({}: Props) {
 
         <ul className='list-disc space-y-4 ml-5 text-lg'>
           <li>summary point summary point summary point summary point summary point</li>
-          <li>summary point summary point summary point summary point summary point</li>
-          <li>summary point summary point summary point summary point summary point</li>
         </ul>
       </div>
       
