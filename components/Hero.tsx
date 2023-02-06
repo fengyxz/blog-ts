@@ -52,7 +52,7 @@ export default function Hero({}: Props) {
         </div>
     
         <Link href="blog">
-          <button className='blogButton'>BLOG</button>
+          <button className='blogButton'>Article</button>
         </Link>
     
       </div>

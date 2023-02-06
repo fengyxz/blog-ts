@@ -30,7 +30,7 @@ function ContactMe({}: Props) {
         <span className='decoration-pink-300/50 underline'> Let's Talk</span>
       </h4>
 
-      <div className='space-y-10'>
+      <div className='space-y-5'>
         <div className='flex items-center space-x-5 justify-center'>
           <PhoneIcon className='text-pink-200/50 h-7 w-7 animate-pulse'/>
           <p className='text-xl'>+86 17799855571</p>
@@ -45,7 +45,7 @@ function ContactMe({}: Props) {
 
     <form 
       onSubmit={handleSubmit(onSubmit)} 
-      className='flex flex-col space-y-2 w-fit mx-auto'>
+      className='flex flex-col space-y-1 w-fit mx-auto'>
       <div className='flex space-x-2'>     
         <input {...register('name')} placeholder="Name" className="contactInput" type="text"/>
         <input {...register('email')} placeholder="Email" className="contactInput" type="email"/>
