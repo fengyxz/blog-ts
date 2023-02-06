@@ -11,7 +11,7 @@ function Projects({}: Props) {
      Projects
     </h3>
 
-      <div className='relative -pt-40 w-full flex overflow-x-scroll overflow-y-hidden snap-x
+      <div className='relative -pt-10 w-full flex overflow-x-scroll overflow-y-hidden snap-x
       snap-mandatory z-20  scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-pink-100/80'>
         {
           projects.map((project,i) => (
@@ -26,7 +26,7 @@ function Projects({}: Props) {
                 viewport={{once:true}}
                 src="images/vsc.png"
                 alt=""
-                width={500}
+                width={350}
               />
               <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                 <h4 className='text-3xl xl:text-4xl font-semibold text-center'>
