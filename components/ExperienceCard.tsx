@@ -2,50 +2,51 @@ import { motion } from "framer-motion";
 import React, { ReactElement } from "react";
 
 type ExpCardProps = {
-  icon: ReactElement;
+  iconURL: string;
   enterprise: string;
-  content: string;
+  department: string;
   title: string;
+  time?: string;
+  work?: string[];
 };
 
 export const ExperienceCard: React.FC<ExpCardProps> = (props) => {
+  const { iconURL, enterprise, department, title, work, time } = props;
   return (
     <article
       className="mt-20 flex flex-col rounded-l items-center space-y-7 flex-shrink-0 w-[500px] snap-center bg-[#292929] p-5 opacity-40 
     hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden"
     >
-      <motion.img
-        initial={{
-          y: -100,
-          opacity: 0,
-        }}
-        transition={{ duration: 1.2 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="w-20 h-20 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
-        src="images/me.jpg"
-        alt="me"
-      />
       <div className="px-0 md:px-10">
-        <h4 className="text-2xl font-light">QA of Fliggy</h4>
-        <p className="font-bold text-xl mt-1">Alibaba</p>
-        <div className="flex space-x-2 my-2">
-          <img
-            className="h-10 w-10 rounded-full object-cover"
-            src="images/Fliggy.jpeg"
-            alt=""
+        <div className="flex justify-center items-center p-4">
+          <motion.img
+            initial={{
+              y: -50,
+              x: -50,
+              opacity: 0,
+            }}
+            transition={{ duration: 1.2 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            viewport={{ once: true }}
+            className="rounded-sm w-24 h-20 object-cover object-center"
+            src={iconURL}
+            alt="me"
           />
         </div>
-
-        <p className="uppercase py-5 text-gray-300">
-          Strated work ... - Ended...
-        </p>
-
+        <div className="flex">
+          <div>
+            <h1 className="pr-2 font-bold text-2xl pb-2">{enterprise}</h1>
+            <h2 className="text-medium font-light">
+              <span className="pr-2 font-bold">{department}</span>
+              {title}
+            </h2>
+          </div>
+        </div>
+        <p className="uppercase py-2 text-gray-300">{time}</p>
         <ul className="list-disc space-y-4 ml-5 text-md">
-          <li>
-            负责飞猪客户端/服务端/小程序等产品质量保障和研发效能提升，用户体验改进工作
-          </li>
-          <li>优化测试流程，建设测试工具</li>
+          {work?.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </div>
     </article>
